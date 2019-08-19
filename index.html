@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<title>Contrast Checker: Easily calculate color contrast ratios. Made to help to Pass WCAG</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon"  type="image/png" href="about:blank" />
+
+</head>
+<body>
+
+<h1><a href="#"><div><span>Contrast <br>Checker</span></div> <div><strong></strong></div></a></h1>
+
+
+</section>
+
+<label class="background">
+	<span>Background:</span>
+	<input id="background" value="#000000" autofocus />
+</label>
+
+<label class="foreground">
+	<span>Text color:</span>
+	<input id="foreground" value="#FFFFFF" />
+</label>
+
+<div class="resulttitle">
+	<p> Color Contrast Ratio:</p>
+</div>
+
+
+<output tabindex="0" aria-live="polite">
+	<strong>?</strong>
+	<span class="error"></span>
+</output>
+
+<section id="results">
+
+</section>
+
+<section class="color-display" id="backgroundDisplay">
+	<h4>A Quick Brown Fox <br>Jumps Over the Lazy Dog</h4>
+	<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non mattis augue, quis interdum lacus. Aenean pellentesque libero auctor mauris imperdiet, non volutpat lectus luctus. Pellentesque auctor est lectus, et fermentum est tincidunt eget. Integer faucibus orci sem, sed sodales tellus rutrum non. Duis aliquet cursus dolor vitae vestibulum. Maecenas quis aliquam turpis. Mauris eu velit at sem convallis laoreet.</h5>
+</section>
+
+<section class="color-display" id="foregroundDisplay">
+	<button id="swap">SWITCH COLOR</button>
+</section>
+
+
+<div class="note">
+	<p> Note: <br><br> When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account for the different colors they may be over.</p>
+</div>
+
+<footer></footer>
+
+<script src="incrementable.js" id="incrementable" async></script>
+<script src="color.js"></script>
+<script src="contrast-ratio.js"></script>
+
+
+
+</body>
+</html>
